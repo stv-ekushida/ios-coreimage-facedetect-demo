@@ -13,6 +13,9 @@
 		790D93A41EF7696D00ACBB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790D93A31EF7696D00ACBB67 /* Assets.xcassets */; };
 		790D93A71EF7696D00ACBB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790D93A51EF7696D00ACBB67 /* LaunchScreen.storyboard */; };
 		790D93B21EF7696D00ACBB67 /* ios_FaceFeature_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D93B11EF7696D00ACBB67 /* ios_FaceFeature_demoTests.swift */; };
+		790D93BE1EF7699500ACBB67 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 790D93BD1EF7699500ACBB67 /* CoreImage.framework */; };
+		790D93C01EF793E900ACBB67 /* UIImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D93BF1EF793E900ACBB67 /* UIImage+Ex.swift */; };
+		790D93C41EF7CF1E00ACBB67 /* BrightnessFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790D93C31EF7CF1E00ACBB67 /* BrightnessFilter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		790D93AD1EF7696D00ACBB67 /* ios-FaceFeature-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-FaceFeature-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		790D93B11EF7696D00ACBB67 /* ios_FaceFeature_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_FaceFeature_demoTests.swift; sourceTree = "<group>"; };
 		790D93B31EF7696D00ACBB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		790D93BD1EF7699500ACBB67 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		790D93BF1EF793E900ACBB67 /* UIImage+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Ex.swift"; sourceTree = "<group>"; };
+		790D93C31EF7CF1E00ACBB67 /* BrightnessFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessFilter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790D93BE1EF7699500ACBB67 /* CoreImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +69,7 @@
 				790D939B1EF7696C00ACBB67 /* ios-FaceFeature-demo */,
 				790D93B01EF7696D00ACBB67 /* ios-FaceFeature-demoTests */,
 				790D939A1EF7696C00ACBB67 /* Products */,
+				790D93BC1EF7699400ACBB67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +91,8 @@
 				790D93A31EF7696D00ACBB67 /* Assets.xcassets */,
 				790D93A51EF7696D00ACBB67 /* LaunchScreen.storyboard */,
 				790D93A81EF7696D00ACBB67 /* Info.plist */,
+				790D93BF1EF793E900ACBB67 /* UIImage+Ex.swift */,
+				790D93C31EF7CF1E00ACBB67 /* BrightnessFilter.swift */,
 			);
 			path = "ios-FaceFeature-demo";
 			sourceTree = "<group>";
@@ -94,6 +104,14 @@
 				790D93B31EF7696D00ACBB67 /* Info.plist */,
 			);
 			path = "ios-FaceFeature-demoTests";
+			sourceTree = "<group>";
+		};
+		790D93BC1EF7699400ACBB67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				790D93BD1EF7699500ACBB67 /* CoreImage.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +164,7 @@
 				TargetAttributes = {
 					790D93981EF7696C00ACBB67 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PCCZJUYRT6;
 						ProvisioningStyle = Automatic;
 					};
 					790D93AC1EF7696D00ACBB67 = {
@@ -199,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790D93C41EF7CF1E00ACBB67 /* BrightnessFilter.swift in Sources */,
 				790D939F1EF7696D00ACBB67 /* ViewController.swift in Sources */,
+				790D93C01EF793E900ACBB67 /* UIImage+Ex.swift in Sources */,
 				790D939D1EF7696C00ACBB67 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-FaceFeature-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-FaceFeature-demo";
@@ -351,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-FaceFeature-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-FaceFeature-demo";
@@ -406,6 +429,7 @@
 				790D93B81EF7696D00ACBB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		790D93B91EF7696D00ACBB67 /* Build configuration list for PBXNativeTarget "ios-FaceFeature-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +438,7 @@
 				790D93BB1EF7696D00ACBB67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
